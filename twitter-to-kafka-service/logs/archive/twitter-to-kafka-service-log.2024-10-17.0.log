@@ -1,0 +1,33 @@
+2024-10-17 13:21:51.318 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 75001 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-17 13:21:51.322 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-17 13:21:52.093 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-17 13:21:52.103 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-17 13:21:52.103 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-17 13:21:52.104 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-17 13:21:52.163 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-17 13:21:52.163 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 796 ms
+2024-10-17 13:21:52.286 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-17 13:21:52.391 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-17 13:21:52.420 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-17 13:21:52.427 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.517 seconds (JVM running for 1.998)
+2024-10-17 13:21:52.428 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-17 13:21:52.428 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-17 13:21:52.428 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-17 13:21:52.428 INFO  [main] c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords: [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-17 13:21:52.463 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet vel Donec nec dolor Donec adipiscing ipsum Java elit Donec Lorem vel vel Curabitur
+2024-10-17 13:21:53.469 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit Curabitur ante sit aliquam Vestibulum Kafka consectetur consectetur dolor ante
+2024-10-17 13:21:54.470 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetur tempus Vestibulum elit sit Vestibulum Curabitur dolor Microservices adipiscing nec sit et consectetur ante
+2024-10-17 13:21:55.475 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetur nec tincidunt tempus Donec amet ante Spring vel ipsum nec aliquam mauris
+2024-10-17 13:21:56.477 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing ante tempus et Curabitur Curabitur Elasticsearch Vestibulum Vestibulum tempus ipsum vel
+2024-10-17 13:21:57.482 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text tempus adipiscing dolor tincidunt adipiscing Java Curabitur Donec vel Donec
+2024-10-17 13:21:58.483 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ante amet ante consectetur odio tempus Java et adipiscing Donec amet
+2024-10-17 13:21:59.489 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text odio diam tincidunt tempus Spring tincidunt Donec Donec
+2024-10-17 13:22:00.494 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ante mauris vel Lorem Curabitur dolor aliquam Kafka et Lorem nec et Donec
+2024-10-17 13:22:01.498 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text diam odio consectetur Donec sit elit dolor tempus Microservices tempus Lorem dolor amet nec diam Curabitur
+2024-10-17 13:22:02.502 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ante Donec amet amet Elasticsearch vel tincidunt mauris
+2024-10-17 13:22:03.503 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit tincidunt Lorem tempus consectetur Curabitur Kafka Lorem Curabitur ipsum dolor vel
+2024-10-17 13:22:04.505 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ante vel ipsum odio Curabitur vel tempus Spring vel nec Vestibulum ante ipsum tincidunt
+2024-10-17 13:22:05.510 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text diam Lorem dolor mauris mauris Donec dolor et Kafka mauris aliquam sit vel odio Lorem ipsum
+2024-10-17 13:22:06.516 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing adipiscing tincidunt Donec elit aliquam Microservices tincidunt adipiscing et amet Vestibulum
+2024-10-17 13:22:07.521 INFO  [pool-1-thread-1] c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Donec et mauris Vestibulum elit odio Microservices Vestibulum amet tincidunt elit amet
+2024-10-17 13:22:07.577 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

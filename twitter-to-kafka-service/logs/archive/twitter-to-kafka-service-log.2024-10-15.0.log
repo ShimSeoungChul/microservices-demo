@@ -1,0 +1,448 @@
+2024-10-15 10:00:28.265 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 60167 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 10:00:28.268 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 10:00:28.967 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 10:00:28.975 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 10:00:28.975 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 10:00:28.975 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 10:00:29.025 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 10:00:29.026 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 713 ms
+2024-10-15 10:00:29.063 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userRepo'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.UserRepo' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-10-15 10:00:29.065 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-15 10:00:29.076 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 10:00:29.136 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepo in com.microservices.demo.twitter.to.kafka.service.UserController required a bean of type 'com.microservices.demo.twitter.to.kafka.service.UserRepo' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.twitter.to.kafka.service.UserRepo' in your configuration.
+
+2024-10-15 14:17:32.277 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 62059 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 14:17:32.279 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 14:17:33.072 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 14:17:33.084 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 14:17:33.085 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 14:17:33.085 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 14:17:33.151 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 14:17:33.151 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 826 ms
+2024-10-15 14:17:33.195 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-15 14:17:33.197 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-15 14:17:33.207 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 14:17:33.275 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+
+2024-10-15 14:18:23.375 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 62078 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 14:18:23.376 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 14:18:23.989 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 14:18:23.996 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 14:18:23.996 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 14:18:23.996 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 14:18:24.038 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 14:18:24.038 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 628 ms
+2024-10-15 14:18:24.071 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaStreamRunner' defined in file [/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/runner/TwitterKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'twitterKafkaStreamRunner': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-10-15 14:18:24.073 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-15 14:18:24.081 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 14:18:24.083 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   twitterToKafkaServiceApplication
+┌─────┐
+|  twitterKafkaStreamRunner defined in file [/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/runner/TwitterKafkaStreamRunner.class]
+└─────┘
+
+
+2024-10-15 17:21:09.492 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 62959 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 17:21:09.495 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 17:21:10.290 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 17:21:10.300 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 17:21:10.300 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 17:21:10.300 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 17:21:10.362 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 17:21:10.362 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 822 ms
+2024-10-15 17:21:10.410 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterKafkaStreamRunner' defined in file [/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/runner/TwitterKafkaStreamRunner.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'twitterKafkaStreamRunner': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-10-15 17:21:10.413 INFO  [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-15 17:21:10.423 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 17:21:10.425 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   twitterToKafkaServiceApplication
+┌─────┐
+|  twitterKafkaStreamRunner defined in file [/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/runner/TwitterKafkaStreamRunner.class]
+└─────┘
+
+
+2024-10-15 23:34:20.931 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65066 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:34:20.934 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:34:21.708 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:34:21.718 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:34:21.718 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:34:21.718 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:34:21.777 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:34:21.777 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 795 ms
+2024-10-15 23:34:21.911 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:34:22.027 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:34:22.062 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:34:22.071 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.593 seconds (JVM running for 2.072)
+2024-10-15 23:34:22.072 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:34:22.072 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:34:22.072 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:34:22.074 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:34:22.851 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:34:23.061 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:34:23.065 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: twitter4j.JSONException: Value title of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:111)
+	at twitter4j.JSONObject.<init>(JSONObject.java:171)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:175)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:79)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:37)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:34:23.140 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:38:59.938 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65120 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:38:59.941 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:39:00.688 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:39:00.697 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:39:00.698 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:39:00.698 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:39:00.752 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:39:00.752 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 770 ms
+2024-10-15 23:39:00.873 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:39:00.982 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:39:01.012 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:39:01.020 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.468 seconds (JVM running for 1.874)
+2024-10-15 23:39:01.021 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:39:01.021 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:39:01.021 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:39:01.022 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:39:01.732 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:39:01.946 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:39:01.950 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: twitter4j.JSONException: Value title of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:111)
+	at twitter4j.JSONObject.<init>(JSONObject.java:171)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:182)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:78)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:37)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:39:02.023 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:43:08.764 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65155 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:43:08.766 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:43:09.507 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:43:09.515 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:43:09.515 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:43:09.515 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:43:09.567 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:43:09.567 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 759 ms
+2024-10-15 23:43:09.702 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:43:09.818 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:43:09.847 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:43:09.854 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.476 seconds (JVM running for 1.901)
+2024-10-15 23:43:09.856 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:43:09.856 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:43:09.856 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:43:09.857 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:43:10.567 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:52:23.378 INFO  [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:52:31.683 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65279 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:52:31.685 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:52:32.530 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:52:32.540 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:52:32.541 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:52:32.541 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:52:32.601 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:52:32.601 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 862 ms
+2024-10-15 23:52:32.748 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:52:32.884 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:52:32.930 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:52:32.944 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.682 seconds (JVM running for 2.136)
+2024-10-15 23:52:32.946 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:52:32.946 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:52:32.946 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:52:32.948 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:52:33.841 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:52:34.087 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:52:34.091 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: twitter4j.JSONException: Value title of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:111)
+	at twitter4j.JSONObject.<init>(JSONObject.java:171)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:182)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:78)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:37)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:52:34.165 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:53:31.599 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65298 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:53:31.602 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:53:32.262 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:53:32.270 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:53:32.270 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:53:32.271 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:53:32.321 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:53:32.321 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 670 ms
+2024-10-15 23:53:32.454 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:53:32.555 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:53:32.584 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:53:32.592 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.31 seconds (JVM running for 1.673)
+2024-10-15 23:53:32.593 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:53:32.593 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:53:32.594 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:53:32.594 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - TwitterV2KafkaStreamRunner is going to start with bearer token: ${TWITTER_BEARER_TOKEN}
+2024-10-15 23:53:32.596 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:53:33.478 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:53:33.702 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:53:33.705 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: twitter4j.JSONException: Value title of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:111)
+	at twitter4j.JSONObject.<init>(JSONObject.java:171)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:182)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:78)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:53:33.779 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:54:58.570 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65325 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:54:58.572 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:54:59.279 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:54:59.287 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:54:59.288 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:54:59.288 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:54:59.335 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:54:59.335 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 726 ms
+2024-10-15 23:54:59.455 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:54:59.559 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:54:59.591 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:54:59.599 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.39 seconds (JVM running for 1.817)
+2024-10-15 23:54:59.600 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:54:59.600 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:54:59.601 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:54:59.601 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - TwitterV2KafkaStreamRunner is going to start with bearer token: ${TWITTER_BEARER_TOKEN}
+2024-10-15 23:54:59.604 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:55:00.508 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:55:00.724 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:55:00.728 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: twitter4j.JSONException: Value title of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:111)
+	at twitter4j.JSONObject.<init>(JSONObject.java:171)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:182)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:78)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:55:00.802 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:55:25.447 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65340 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:55:25.448 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:55:26.088 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:55:26.096 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:55:26.096 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:55:26.096 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:55:26.148 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:55:26.148 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 666 ms
+2024-10-15 23:55:26.274 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:55:26.370 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:55:26.398 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:55:26.405 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.282 seconds (JVM running for 1.637)
+2024-10-15 23:55:26.406 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:55:26.406 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:55:26.406 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:55:26.406 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - TwitterV2KafkaStreamRunner is going to start with bearer token: TokenAAAAAAAAAAAAAAAAAAAAAKqowQEAAAAApEwcUmfW%2Fag6mB8y00RGAQ5BHZk%3DzHz9DFwtY5SaXYSRoGvObzGLjL4u1sJoFoQyEPQMoghxHGKR3Y
+2024-10-15 23:55:26.408 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:55:27.252 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:55:27.467 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:55:27.471 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: twitter4j.JSONException: Value title of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:111)
+	at twitter4j.JSONObject.<init>(JSONObject.java:171)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:182)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:78)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:55:27.545 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:57:27.386 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65372 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:57:27.390 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:57:28.146 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:57:28.155 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:57:28.156 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:57:28.156 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:57:28.206 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:57:28.206 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 766 ms
+2024-10-15 23:57:28.325 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:57:28.442 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:57:28.471 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:57:28.478 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.47 seconds (JVM running for 1.897)
+2024-10-15 23:57:28.479 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:57:28.480 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:57:28.480 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:57:28.480 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - TwitterV2KafkaStreamRunner is going to start with bearer token: AAAAAAAAAAAAAAAAAAAAAKqowQEAAAAAPqTk8mt5pZ2IkB5SsDlSQqA%2F%2FrE%3D3N5Yd1xU166rUxRHbG9AT8g2MVV7j1Bfxm23AnxfDusZWloyth
+2024-10-15 23:57:28.482 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:57:29.513 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:57:29.746 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:57:29.748 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: java.lang.NullPointerException: null
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:77)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:57:29.819 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:59:14.468 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on comui-MacBookPro.local with PID 65396 (/Users/com/IdeaProjects/microservices-demo/twitter-to-kafka-service/target/classes started by com in /Users/com/IdeaProjects/microservices-demo)
+2024-10-15 23:59:14.470 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2024-10-15 23:59:15.219 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-10-15 23:59:15.227 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:59:15.228 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-15 23:59:15.228 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2024-10-15 23:59:15.278 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-15 23:59:15.278 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 756 ms
+2024-10-15 23:59:15.400 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-15 23:59:15.506 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-15 23:59:15.537 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-10-15 23:59:15.546 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.485 seconds (JVM running for 1.928)
+2024-10-15 23:59:15.547 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2024-10-15 23:59:15.548 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-10-15 23:59:15.548 INFO  [main] c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices
+2024-10-15 23:59:15.548 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - TwitterV2KafkaStreamRunner is going to start with bearer token: ${TWITTER_BEARER_TOKEN}
+2024-10-15 23:59:15.551 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2024-10-15 23:59:16.405 INFO  [main] c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-10-15 23:59:16.621 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-10-15 23:59:16.624 ERROR [main] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: twitter4j.JSONException: Value title of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:111)
+	at twitter4j.JSONObject.<init>(JSONObject.java:171)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:182)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:78)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:34)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2024-10-15 23:59:16.697 INFO  [main] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
