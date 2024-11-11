@@ -24,6 +24,7 @@
 		<module>elastic/elastic-query-client</module>
 		<module>common-util</module>
 		<module>elastic/elastic-query-service</module>
+		<module>elastic-query-web-client</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -43,6 +44,7 @@
 		<spring-cloud.version>2.2.6.RELEASE</spring-cloud.version>
 		<spring-cloud-dependencies.version>Hoxton.SR9</spring-cloud-dependencies.version>
 		<elastic.version>7.9.1</elastic.version>
+		<springdoc-openapi-ui.version>1.5.0</springdoc-openapi-ui.version>
 	</properties>
 
 	<repositories>
@@ -54,6 +56,16 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-loadbalancer</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>${springdoc-openapi-ui.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.microservices.demo</groupId>
 				<artifactId>elastic-query-client</artifactId>
