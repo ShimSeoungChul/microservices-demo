@@ -21,11 +21,15 @@
         <module>config-server</module>
 		<module>kafka-to-elastic-service</module>
 		<module>elastic</module>
-		<module>elastic/elastic-query-client</module>
 		<module>common-util</module>
-		<module>elastic/elastic-query-service</module>
+		<module>elastic-query-service</module>
 		<module>elastic-query-web-client</module>
-	</modules>
+		<module>elastic-query-service-common</module>
+		<module>elastic-query-web-client-common</module>
+		<module>reactive-elastic-query-service</module>
+		<module>reactive-elastic-query-web-client</module>
+        <module>elastic-query-web-client2</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -45,6 +49,7 @@
 		<spring-cloud-dependencies.version>Hoxton.SR9</spring-cloud-dependencies.version>
 		<elastic.version>7.9.1</elastic.version>
 		<springdoc-openapi-ui.version>1.5.0</springdoc-openapi-ui.version>
+		<postgresql.version>42.2.16</postgresql.version>
 	</properties>
 
 	<repositories>
@@ -56,6 +61,21 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${postgresql.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-query-web-client-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>elastic-query-service-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-loadbalancer</artifactId>
