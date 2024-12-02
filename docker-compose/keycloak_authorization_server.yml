@@ -4,7 +4,7 @@ services:
     image: quay.io/keycloak/keycloak:11.0.3
     hostname: keycloak-server
     ports:
-      - "8081:8081"
+      - "9081:9081"
     environment:
       - "KEYCLOAK_USER=admin"
       - "KEYCLOAK_PASSWORD=admin"
